@@ -350,6 +350,29 @@ body.pagina-loja {
     }
 }
 
+@media (max-width: 500px) {
+
+    .contato {
+        padding: 30px 15px 60px !important;
+    }
+
+    .contato-info-item {
+        padding: 18px 12px;
+    }
+
+    .contato-grid {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .contato-info-item,
+    .contato-coluna-esquerda,
+    .contato-form {
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 650px) {
     .hero {
         flex-direction: column;
