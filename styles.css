@@ -459,3 +459,201 @@ body.pagina-loja {
 body.pagina-sobre {
     background-color: #e9faff;
 }
+
+.produtos.destaques {
+    margin-top: 40px;
+}
+
+.destaques-carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #0b1624;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.carousel-counter {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    font-size: 0.8rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 4px 8px;
+    border-radius: 999px;
+    z-index: 2;
+    margin: 0;
+}
+
+.carousel-slides {
+    position: relative;
+    min-height: 280px;
+    background-color: #222;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 60px;
+    opacity: 0;
+    transform: translateX(20px);
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.slide.ativo {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.slide figure {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.slide img {
+    max-width: 480px;
+    width: 45vw;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.slide-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.slide-info .produto-descricao {
+    margin-bottom: 10px;
+}
+
+.slide-info .produto-preco {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.carousel-arrow.prev {
+    left: 10px;
+}
+
+.carousel-arrow.next {
+    right: 10px;
+}
+
+.carousel-arrow:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.carousel-indicators .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.carousel-indicators .dot.ativo {
+    background: #fff;
+}
+
+@media (max-width: 768px) {
+    .slide {
+        padding: 30px 20px 50px;
+        gap: 24px;
+    }
+
+    .slide figure {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .slide img {
+        width: 80vw;
+        max-width: 360px;
+    }
+
+    .slide-info h3 {
+        font-size: 1.4rem;
+    }
+
+    .slide-info .produto-preco {
+        font-size: 1.05rem;
+    }
+
+    .carousel-arrow.prev {
+        left: 5px;
+    }
+
+    .carousel-arrow.next {
+        right: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .destaques-carousel {
+        border-radius: 0;
+    }
+
+    .slide {
+        padding: 24px 14px 46px;
+    }
+
+    .slide img {
+        width: 90vw;
+        max-width: 320px;
+    }
+
+    .carousel-counter {
+        font-size: 0.7rem;
+        top: 4px;
+        left: 6px;
+    }
+
+    .carousel-arrow {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+
+    .carousel-indicators {
+        bottom: 8px;
+    }
+}

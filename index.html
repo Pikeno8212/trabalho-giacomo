@@ -26,7 +26,6 @@
   </header>
 
   <main>
-
     <section class="hero">
       <section class="hero-texto">
         <h1>Criartes Presentes &amp; Personalizados</h1>
@@ -37,7 +36,6 @@
         <a href="./loja.html" class="btn-primario">Ver produtos</a>
       </section>
     </section>
-
 
     <section class="beneficios">
       <h2>Por que comprar na Criartes?</h2>
@@ -66,7 +64,6 @@
       </section>
     </section>
 
-
     <section class="categorias">
       <h2>Categorias em destaque</h2>
       <section class="categorias-grid">
@@ -93,48 +90,82 @@
       </section>
     </section>
 
-
-    <section class="produtos">
+    <section class="produtos destaques">
       <h2>Alguns dos nossos destaques</h2>
 
-      <section class="produtos-grid">
-        <article class="produto-card">
-          <img src="/img/almofadacoracao.jpg" alt="Almofada Coração Personalizada">
-          <h3>Almofada de Coração</h3>
-          <p class="produto-descricao">
-            Almofada em formato de coração com estampa romântica.
-          </p>
-          <p class="produto-preco">R$ 29,90</p>
-        </article>
+      <section class="destaques-carousel" aria-label="Produtos em destaque">
+        <p class="carousel-counter">1 / 3</p>
 
-        <article class="produto-card">
-          <img src="/img/canecamagica.jpg" alt="Caneca Mágica - Personalizada">
-          <h3>Caneca Mágica - Personalizada</h3>
-          <p class="produto-descricao">
-            Uma caneca preta quando está vazia, mas quando adicionar qualquer líquido quente sua imagem aparece!
-          </p>
-          <p class="produto-preco">R$ 59,90</p>
-        </article>
+        <button class="carousel-arrow prev" type="button" aria-label="Produto anterior">
+          &#10094;
+        </button>
 
-        <article class="produto-card">
-          <img src="/img/pantufa.jpg" alt="Pantufa Dia das mães">
-          <h3>Pantufa Dia das mães</h3>
-          <p class="produto-descricao">
-            Pantufa personalizada com mensagem especial para o Dia das Mães.
-          </p>
-          <p class="produto-preco">R$ 59,00</p>
-        </article>
+        <section class="carousel-slides">
+          <article class="slide ativo">
+            <figure>
+              <img src="/img/almofadacoracao.jpg" alt="Almofada Coração Personalizada">
+              <figcaption class="slide-info">
+                <h3>Almofada de Coração</h3>
+                <p class="produto-descricao">
+                  Almofada em formato de coração com estampa romântica.
+                </p>
+                <p class="produto-preco">R$ 29,90</p>
+                <a href="./loja.html" class="btn-primario">Ver mais detalhes</a>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="slide">
+            <figure>
+              <img src="/img/canecamagica.jpg" alt="Caneca Mágica - Personalizada">
+              <figcaption class="slide-info">
+                <h3>Caneca Mágica - Personalizada</h3>
+                <p class="produto-descricao">
+                  Uma caneca preta quando está vazia, mas quando adicionar qualquer líquido quente sua imagem aparece!
+                </p>
+                <p class="produto-preco">R$ 59,90</p>
+                <a href="./loja.html" class="btn-primario">Ver mais detalhes</a>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="slide">
+            <figure>
+              <img src="/img/pantufa.jpg" alt="Pantufa Dia das mães">
+              <figcaption class="slide-info">
+                <h3>Pantufa Dia das Mães</h3>
+                <p class="produto-descricao">
+                  Pantufa personalizada com mensagem especial para o Dia das Mães.
+                </p>
+                <p class="produto-preco">R$ 59,00</p>
+                <a href="./loja.html" class="btn-primario">Ver mais detalhes</a>
+              </figcaption>
+            </figure>
+          </article>
+        </section>
+
+        <button class="carousel-arrow next" type="button" aria-label="Próximo produto">
+          &#10095;
+        </button>
+
+        <nav class="carousel-indicators" aria-label="Selecionar produto em destaque">
+          <button class="dot ativo" type="button" data-index="0"></button>
+          <button class="dot" type="button" data-index="1"></button>
+          <button class="dot" type="button" data-index="2"></button>
+        </nav>
       </section>
 
-      <section style="text-align:center; margin-top:25px;">
+      <p style="text-align:center; margin-top:25px;">
         <a href="./loja.html" class="btn-primario">Ver todos os produtos</a>
-      </section>
+      </p>
     </section>
   </main>
 
   <footer>
     <p>© 2025 Criartes Presentes &amp; Personalizados. Todos os direitos reservados.</p>
   </footer>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>

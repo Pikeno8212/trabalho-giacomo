@@ -69,21 +69,26 @@
         </aside>
 
 
-        <form class="contato-form" id="contato-form">
-          <label>Nome</label>
-          <input type="text" placeholder="Seu nome completo">
+        <form class="contato-form" id="contato-form" novalidate>
+          <label for="contato-nome">Nome</label>
+          <input id="contato-nome" type="text" placeholder="Seu nome completo" />
+          <span class="campo-erro" id="erro-nome" aria-live="polite"></span>
 
-          <label>E-mail</label>
-          <input type="email" placeholder="seuemail@exemplo.com">
+          <label for="contato-email">E-mail</label>
+          <input id="contato-email" type="email" placeholder="seuemail@exemplo.com" />
+          <span class="campo-erro" id="erro-email" aria-live="polite"></span>
 
-          <label>Assunto</label>
-          <input type="text" placeholder="Ex: orçamento para camisetas">
+          <label for="contato-assunto">Assunto</label>
+          <input id="contato-assunto" type="text" placeholder="Ex: orçamento para camisetas" />
+          <span class="campo-erro" id="erro-assunto" aria-live="polite"></span>
 
-          <label>Mensagem</label>
-          <textarea rows="4" placeholder="Descreva o que você quer personalizar"></textarea>
+          <label for="contato-mensagem">Mensagem</label>
+          <textarea id="contato-mensagem" rows="4" placeholder="Descreva o que você quer personalizar"></textarea>
+          <span class="campo-erro" id="erro-mensagem" aria-live="polite"></span>
 
           <button type="submit" class="btn-secundario">Enviar mensagem</button>
         </form>
+
 
       </section>
     </section>
