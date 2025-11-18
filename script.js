@@ -23,13 +23,13 @@ filtroBtns.forEach((btn) => {
 
 const contatoForm = document.getElementById("contato-form");
 
-    if (contatoForm) {
-      contatoForm.addEventListener("submit", function (event) {
-        event.preventDefault(); // impede recarregar a página
+if (contatoForm) {
+    contatoForm.addEventListener("submit", function (event) {
+        event.preventDefault();
 
         alert("Mensagem enviada com sucesso! Em breve entraremos em contato 😊");
 
-        // limpa os campos
+   
         contatoForm.reset();
-      });
-    }
+    });
+}
